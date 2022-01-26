@@ -1,0 +1,143 @@
+div{
+    /* white-space: nowrap; */
+}
+.btn{
+    background-color: white;
+}
+
+.bd-none-l{
+    border-left: none!important;
+}
+.bd-none-r{
+    border-right: none!important;
+}
+
+.bg-color-bug{
+    border: solid 3px #ff210a;
+}
+.bg-color-aqua{
+    border: solid 3px #0ac6ff;
+}
+.bg-color-bird{
+    border: solid 3px rgb(255, 107, 144);
+}
+.bg-color-beast{
+    border: solid 3px yellow;
+}
+.bg-color-plant{
+    border: solid 3px rgb(15, 146, 33);
+}
+.bg-color-rep{
+    border: solid 3px rgb(190, 31, 190);
+}
+
+.bg-color-up{
+    border: solid 3px #005cbf;
+}
+.bg-color-down{
+    border: solid 3px #dc3545;
+}
+
+.bg-color-bug:hover,.bg-color-bug.active{
+    color: white;
+    background-color: #ff210a!important;
+}
+.bg-color-aqua:hover,.bg-color-aqua.active{
+    color: white;
+    background-color: #0ac6ff!important;
+}
+.bg-color-bird:hover{
+    color: white;
+    background-color: rgb(255, 107, 144)!important;
+}
+.bg-color-beast:hover{
+    color: white;
+    background-color: yellow!important;
+}
+.bg-color-plant:hover,.bg-color-plant.active{
+    color: white;
+    background-color: rgb(15, 146, 33)!important;
+}
+.bg-color-rep:hover{
+    color: white;
+    background-color: rgb(190, 31, 190)!important;
+}
+
+.bg-color-up.active{
+    color: white;
+    background-color: #005cbf!important;
+}
+.bg-color-down.active{
+    color: white;
+    background-color: #dc3545!important;
+}
+
+.axie-box{
+    border: solid 5px gray;
+    border-radius: 15px;
+}
+
+.axie-box-green{
+    border: solid 5px green;
+}
+
+i.fa-arrow-right{
+    transition: linear 0.1s;
+}
+
+i.fa-arrow-right:hover{
+    transition: linear 0.1s;
+}
+
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+
+.axie-img img{
+    max-width: 100%;
+    min-width: 100px;
+}
+
+.row.axie-box{
+    height: 100%;
+}
+
+.calculator-section{
+    height: 500px;
+    border-radius: 15px;
+    border: solid 5px gray;
+}
+
+.cal-image-box img{
+    height: 100%;
+    width: 100%;
+    border-right:solid 5px gray;   
+    object-fit: cover;
+    object-position: 30%;
+    transition: all 5s;
+}
+.cal-image-box{
+    height: 495px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.row{
+    height: inherit;
+}
+
+.axie-moves.btn{
+    /* border: solid 1px gray;
+    transition-duration: 0.4s; */
+    /* box-shadow: 2px 2px 2px; */
+    background-color: white;
+    border-radius: 15px;
+}
+.move-stacks{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 0.25rem;
+}
