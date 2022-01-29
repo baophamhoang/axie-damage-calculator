@@ -10,21 +10,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="text-center input-section"><input type="text" class="axie-input" placeholder="...Put Axie address here"></div>
+    <div class="text-center loading-section ">Please put an Axie adress above!</div>
+    <div class="container" style="display: none;">
+        <div class="row justify-content-center ">
+        </div>
         <div class="row justify-content-center">
             <!-- Cây -->
-            <div class="col-12 col-lg-4 px-3 mb-1">
+            <div class="col-12 col-md-4 px-3 mb-1">
                 <div class="row axie-box">
                     <div class="col col-5 axie-img  align-self-center">
-                        <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/5901734/axie/axie-full-transparent.png" class="img-fluid" alt="">
+                        <!-- <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/5901734/axie/axie-full-transparent.png" class="img-fluid" alt=""> -->
                     </div>
-                    <div class="col col-4 align-self-center">
-                        <ul class="list-unstyled">
+                    <div class="col col-4 axie-skills align-self-center">
+                        <!-- <ul class="list-unstyled">
                             <li>Disguise</li>
                             <li>Vegetal Bite</li>
                             <li>Pumpkin</li>
                             <li>Carrot</li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="col col-3 align-self-center"> 
                         <a href="#"><i class="fa fa-arrow-right fa-2x select-box"></i> </a>
@@ -32,37 +36,37 @@
                 </div>
             </div>
             <!-- Cá-->
-            <div class="col-12 col-lg-4 px-3 mb-1">
+            <div class="col-12 col-md-4 px-3 mb-1">
                 <div class="row axie-box">
                     <div class="col col-5 axie-img  align-self-center">
-                        <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/7065579/axie/axie-full-transparent.png" class="img-fluid " alt="">
+                        <!-- <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/7065579/axie/axie-full-transparent.png" class="img-fluid " alt=""> -->
                     </div>
-                    <div class="col col-4 align-self-center ">
-                        <ul class="list-unstyled">
+                    <div class="col col-4  axie-skills align-self-center ">
+                        <!-- <ul class="list-unstyled">
                             <li>Arco</li>
                             <li>Fish Hook</li>
                             <li>Spinal Tap</li>
                             <li>Tail Slap</li>
-                        </ul>
+                        </ul> -->
                     </div>
-                    <div class="col col-3 align-self-center"> 
+                    <div class="col col-3 z align-self-center"> 
                         <a href="#"><i class="fa fa-arrow-right fa-2x select-box"></i> </a>
                     </div>
                 </div>
             </div>
             <!-- Chim-->
-            <div class="col-12 col-lg-4 px-3 mb-1">
+            <div class="col-12 col-md-4 px-3 mb-1">
                 <div class="row axie-box">
                     <div class="col col-5 axie-img align-self-center">
-                        <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/7920248/axie/axie-full-transparent.png" class="img-fluid " alt="">
+                        <!-- <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/7920248/axie/axie-full-transparent.png" class="img-fluid " alt=""> -->
                     </div>
-                    <div class="col col-4 align-self-center">
-                        <ul class="list-unstyled">
+                    <div class="col col-4  axie-skills align-self-center">
+                        <!-- <ul class="list-unstyled">
                             <li>Granma's Fan</li>
                             <li>Sugar Rush</li>
                             <li>Soothing Song</li>
                             <li>BlackMail</li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="col col-3 align-self-center"> 
                         <a href="#"><i class="fa fa-arrow-right fa-2x select-box"></i> </a>
@@ -72,26 +76,62 @@
         </div>
         <!-- <button type="button" href="">Pressed</button> -->
         <!-- Calculatopr -->
-        <div class="row calculator-section">
+        <div class="cal-intro text-center">
+            <h1>Damage Calculator</h1>
+            <h3>-Chọn axie để bắt đầu-</h3>
+        </div>
+        <div class="row axie-box calculator-section">
             <!-- <div class="row"> -->
-                <div class="col-3 cal-image-box">
-                        <!-- <img src="https://storage.googleapis.com/assets.axieinfinity.com/axies/7920248/axie/axie-full-transparent.png" alt=""> -->
-                </div>
-                <div class="col-9 cal-content-box">
+                <div class="col-12 col-sm-3 cal-image-box"></div>
+                <div class="cal-image-box-sm"></div>
+                <div class="col-12 col-sm-9 cal-content-box">
                     <div class="text-center"> <h1>Damage Calculator</h1></div>
-                    <div class="cal-moves mb-2"></div>
-                    <div class="cal-enemies mb-2"></div>
-                    <div class="cal-buff mb-2"></div>
-                    <div class="cal-crit mb-2"></div>
-                    <div class="cal-result mb-2"></div>
-                    <div class="cal-total mb-2 "></div>
+                    <div class="row">
+                        <div class="col-12 col-lg-2">SKILLS: </div>
+                        <div class="col-12 col-lg-10">
+                            <div class="cal-moves mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-2">ENEMIES: </div>
+                        <div class="col-12 col-lg-10">
+                            <div class="cal-enemies mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-2">BUFFS: </div>
+                        <div class="col-12 col-lg-10">
+                            <div class="cal-buff mb-2"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-lg-2">COMBO: </div>
+                        <div class="col-12 col-lg-10">
+                            <div class="cal-result mb-2"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-lg-2">TOTAL DMG: </div>
+                        <div class="col-12 col-lg-10">
+                            <div class="cal-total mb-2 "></div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-lg-2"></div>
+                        <div class="col-12 col-lg-10">
+                            <div class="cal-reset"></div>
+                        </div>
+                    </div>
                 </div>
             <!-- </div> -->
         </div>
     </div>
     <script type="module" src="script.js"></script>
-    <!-- <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
-    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script> -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

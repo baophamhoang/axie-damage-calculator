@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 div{
     /* white-space: nowrap; */
 }
@@ -71,10 +74,25 @@ div{
     color: white;
     background-color: #dc3545!important;
 }
+.loading-section{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.loading-icon{
+    animation-name: rotate-circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.container.row{
+    border: solid 5px gray;
+    border-radius: 15px;
+}
 
 .axie-box{
     border: solid 5px gray;
     border-radius: 15px;
+    
 }
 
 .axie-box-green{
@@ -104,26 +122,46 @@ a:hover{
 .row.axie-box{
     height: 100%;
 }
-
-.calculator-section{
-    height: 500px;
-    border-radius: 15px;
-    border: solid 5px gray;
+.cal-intro{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-.cal-image-box img{
-    height: 100%;
+.calculator-section{
+    display: none;
+
+}
+
+
+.cal-image-box-sm{
+    display: none;
+    text-align: center;
     width: 100%;
-    border-right:solid 5px gray;   
+    background: url(./resources/img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+.cal-image-box-sm img{
+    width: 80%;
+    animation: bouncing 1.5s infinite linear;
+
+}
+.cal-image-box img{
+    min-height: 100%;
+    width: 100%;
+    animation: bouncing 1.5s infinite linear;
     object-fit: cover;
     object-position: 30%;
     transition: all 5s;
 }
 .cal-image-box{
-    height: 495px;
-    width: 100%;
+    min-height: 520px;
     padding-left: 0;
     padding-right: 0;
+    border-right:solid 5px gray;   
+    background-repeat: repeat-x;
+    background: url(./resources/img/bg2.png) no-repeat center ;
+    background-size: cover;
 }
 .row{
     height: inherit;
@@ -140,4 +178,37 @@ a:hover{
     display: inline-block;
     padding: 5px;
     border-radius: 0.25rem;
+}
+.cal-reset{
+    cursor: pointer;
+}
+.cal-reset:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+.cal-reset:hover icon{
+    animation-name: rotate-circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transition: all 1s; */
+}
+@keyframes rotate-circle{
+    0%{transform:rotate(360deg);}
+    100%{transform:rotate(-360deg);}
+}
+
+@keyframes bouncing{
+    0%{transform: translateY(0px)}
+    60%{transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}
+
+@media screen and (max-width: 500px) {
+    .cal-image-box{
+        display: none;
+    }
+    .cal-image-box-sm{
+        display: block;
+    }
 }
