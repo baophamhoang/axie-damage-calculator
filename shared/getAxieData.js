@@ -47,7 +47,6 @@ const getData = (address) => {
         "headers": dataHeader,
         "body":  JSON.stringify(dataBody)
     }
-    let data ={};
     return fetch(axieAPI,request)
         .then (response => {
             return response.json();
