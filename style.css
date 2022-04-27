@@ -345,6 +345,7 @@ a:hover{
 .calculator-section{
     display: none;
     background-color: white;
+    min-height: 400px;
 }
 
 
@@ -352,8 +353,10 @@ a:hover{
     display: none;
     text-align: center;
     width: 100%;
-    background: url(./resources/img/bg.jpg) no-repeat;
+    background: url(./resources/img/bg.jpg) ;
     background-size: cover;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 .cal-image-box-sm img{
     width: 80%;
@@ -362,20 +365,22 @@ a:hover{
 }
 .cal-image-box img{
     min-height: 100%;
-    width: 100%;
+    width: calc(100% + 1px);
     animation: bouncing 1.5s infinite linear;
     object-fit: cover;
     object-position: 30%;
-    transition: all 5s;
+    transition: all 2s;
 }
 .cal-image-box{
-    min-height: 520px;
     padding-left: 0;
     padding-right: 0;
     border-right:solid 5px gray;   
     background-repeat: repeat-x;
-    background: url(./resources/img/bg2.png) no-repeat center ;
+    background: url(./resources/img/bg2.png)  center ;
     background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
 }
 .row{
     height: inherit;
@@ -435,7 +440,7 @@ a:hover{
     .axie-input.done{
         width: 80%;
         padding: 0 40px 0 20px;
-        margin-left: 20px;
+         
     }
     .input-checkmarks{
         right: 15%;
